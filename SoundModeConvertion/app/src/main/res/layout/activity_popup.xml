@@ -1,0 +1,140 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:contect=".MainActicity" >
+    <!--android:paddingLeft="@dimen/acticity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/acticity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="[ 모드선택 ]"
+        android:textSize="25sp"
+        android:id="@+id/textView_option"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below = "@+id/textView_option"
+        android:text="- 체크 해제시 수동모드로 전환됩니다."
+        android:textSize="18sp"
+        android:id="@+id/textView_explain"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60dp"/>
+
+    <CheckBox
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동모드"
+        android:textSize="25dp"
+        android:id="@+id/checkBox"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textView_explain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="20dp"
+        android:layout_height="2dp"
+        android:id="@+id/view_below_checkbox"
+        android:layout_centerInParent="true"
+        android:background="#FF808080"/>
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/view_below_checkbox"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="[ 소리 모드 선택 ]"
+        android:textSize="25sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"/>
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="410dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/RelativeLayout" >
+
+        <Button
+            android:id="@+id/button_silent"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="무 음 전 환"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <!--android:layout_marignLeft = "50dp"-->
+        <!--android:layout_marginRight = "50dp"/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="420dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/RelativeLayout"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/RelativeLayout2" >
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="진 동 전 환"
+            android:id="@+id/button_vib"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <!--android:layout_marignLeft = "50dp"-->
+        <!--android:layout_marginRight = "50dp"/>-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/RelativeLayout2"
+        android:layout_marginTop="30dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#FF808080"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="[ 벨소리 조절 ]"
+        android:textSize="25sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/RelativeLayout2"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar_bellsound"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+</RelativeLayout>

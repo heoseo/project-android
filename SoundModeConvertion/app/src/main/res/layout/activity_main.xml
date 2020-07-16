@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop= "250dp"
+    android:layout_marginLeft= "40dp"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:layout_width="330dp"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtText"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:text="비콘이 인지되었습니다.\n\n소리를 설정하시겠습니까?"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/yesBtn"
+            android:text="예"
+            android:textSize="25sp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <Button
+            android:id="@+id/noBtn"
+            android:text="아니오"
+            android:textSize="25sp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>
